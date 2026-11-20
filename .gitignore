@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.expo/
+
+# Environment files - DO NOT COMMIT
+.env
+.env.local
+.env.production
+bhumi-new/.env
+bhumi-backend/.env
+bhumi-backend/.env.local
+
+# Build outputs
+dist/
+build/
+bhumi-backend/dist/
+
+# OS
+.DS_Store
+*.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# EAS
+.eas/
