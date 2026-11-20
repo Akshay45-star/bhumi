@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1179px; height: 2556px;
+    background: #1A0F0A;
+    font-family: -apple-system, "SF Pro Display", sans-serif;
+    overflow: hidden;
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 0;
+  }
+  .top-caption {
+    position: absolute; top: 100px;
+    text-align: center; padding: 0 80px;
+  }
+  .top-caption .eyebrow {
+    font-size: 36px; font-weight: 800; letter-spacing: 6px;
+    color: #C4773B; text-transform: uppercase; margin-bottom: 24px;
+  }
+  .top-caption h1 {
+    font-size: 88px; font-weight: 900; color: #FAF7F2; line-height: 1.0;
+    margin-bottom: 28px;
+  }
+  .top-caption h1 span { color: #C4773B; }
+  .top-caption p {
+    font-size: 38px; color: rgba(250,247,242,0.65); line-height: 1.5;
+    font-weight: 400;
+  }
+  .phone-wrap {
+    position: absolute; bottom: 0px;
+    width: 820px;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .phone {
+    width: 820px; height: 1680px;
+    background: #FFFFFF;
+    border-radius: 90px 90px 0 0;
+    overflow: hidden;
+    box-shadow: 0 -40px 120px rgba(196,119,59,0.25), 0 0 0 2px rgba(196,119,59,0.3);
+    padding: 60px 48px 0;
+    display: flex; flex-direction: column; gap: 28px;
+  }
+  .notch {
+    width: 200px; height: 36px;
+    background: #1A0F0A; border-radius: 0 0 24px 24px;
+    align-self: center; margin-bottom: 8px; flex-shrink: 0;
+  }
+  .greeting { font-size: 32px; color: #9C8070; font-weight: 500; }
+  .name { font-size: 56px; font-weight: 900; color: #1A0F0A; }
+  .urgency {
+    background: #1A0F0A; border-radius: 32px; padding: 40px;
+  }
+  .urgency-l1 { font-size: 44px; font-weight: 800; color: #FAF7F2; line-height: 1.2; margin-bottom: 12px; }
+  .urgency-l2 { font-size: 44px; font-weight: 900; color: #C4773B; line-height: 1.2; margin-bottom: 28px; }
+  .urgency-btn {
+    display: inline-block;
+    background: rgba(196,119,59,0.15); border: 1px solid rgba(196,119,59,0.4);
+    border-radius: 20px; padding: 16px 28px;
+    font-size: 28px; font-weight: 700; color: #C4773B;
+  }
+  .streak {
+    background: linear-gradient(135deg, #C4773B, #D4A017);
+    border-radius: 32px; padding: 36px; display: flex; align-items: center; gap: 24px;
+  }
+  .streak-emoji { font-size: 60px; }
+  .streak-num { font-size: 48px; font-weight: 900; color: #FAF7F2; }
+  .streak-sub { font-size: 24px; color: rgba(255,255,255,0.75); margin-top: 4px; }
+  .streak-btn {
+    margin-left: auto; background: rgba(255,255,255,0.2);
+    border-radius: 20px; padding: 16px 28px;
+    font-size: 26px; font-weight: 700; color: #FAF7F2;
+  }
+  .actions { display: flex; gap: 20px; }
+  .action {
+    flex: 1; background: #F7F4F0; border-radius: 24px; padding: 28px 20px;
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+  }
+  .action-icon {
+    width: 80px; height: 80px; border-radius: 20px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+  }
+  .action-label { font-size: 24px; font-weight: 700; color: #1A0F0A; }
+  .action-sub { font-size: 18px; color: #9C8070; }
+</style>
+</head>
+<body>
+  <div class="top-caption">
+    <div class="eyebrow">Bhumi</div>
+    <h1>Your family will<br>watch this<br><span>forever.</span></h1>
+    <p>30 seconds a day. A lifetime for them.</p>
+  </div>
+  <div class="phone-wrap">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="greeting">Good morning,</div>
+      <div class="name">Akshay 🙏</div>
+      <div class="urgency">
+        <div class="urgency-l1">Your daughter will watch this<br>on her wedding day.</div>
+        <div class="urgency-l2">Even if you're not there.</div>
+        <div class="urgency-btn">Record 30 seconds now →</div>
+      </div>
+      <div class="streak">
+        <div class="streak-emoji">🔥</div>
+        <div>
+          <div class="streak-num">12 day streak</div>
+          <div class="streak-sub">47 memories · 8 days to milestone</div>
+        </div>
+        <div class="streak-btn">Record</div>
+      </div>
+      <div class="actions">
+        <div class="action">
+          <div class="action-icon" style="background:rgba(196,119,59,0.12)">🎥</div>
+          <div class="action-label">Check-In</div>
+          <div class="action-sub">30 sec</div>
+        </div>
+        <div class="action">
+          <div class="action-icon" style="background:rgba(45,125,87,0.12)">💌</div>
+          <div class="action-label">Message</div>
+          <div class="action-sub">Record</div>
+        </div>
+        <div class="action">
+          <div class="action-icon" style="background:rgba(212,160,23,0.12)">🌱</div>
+          <div class="action-label">Legacy</div>
+          <div class="action-sub">Assets</div>
+        </div>
+        <div class="action">
+          <div class="action-icon" style="background:rgba(123,94,167,0.12)">📄</div>
+          <div class="action-label">Docs</div>
+          <div class="action-sub">Upload</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm ci && npm run build"
+
+[deploy]
+startCommand = "node migrate.js; npm start"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[[services]]
+name = "bhumi-api"
+
+[services.healthcheck]
+path = "/health"

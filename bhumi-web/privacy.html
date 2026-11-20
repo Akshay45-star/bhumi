@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Bhumi</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, "Segoe UI", system-ui, sans-serif; background: #FAF7F2; color: #1A0F0A; }
+    header { background: #1A0F0A; padding: 24px; display: flex; align-items: center; gap: 14px; }
+    header a { color: #C4773B; font-size: 13px; text-decoration: none; font-weight: 600; }
+    header span { color: rgba(250,247,242,0.4); }
+    header .title { color: #FAF7F2; font-size: 16px; font-weight: 700; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+    .eyebrow { font-size: 10px; font-weight: 700; color: #C4773B; letter-spacing: 3px; margin-bottom: 12px; }
+    h1 { font-size: 36px; font-weight: 900; color: #1A0F0A; line-height: 1.2; margin-bottom: 8px; }
+    .updated { font-size: 12px; color: #9C8070; margin-bottom: 20px; }
+    .intro { font-size: 16px; color: #6B5344; line-height: 1.7; padding: 20px; background: rgba(196,119,59,0.06); border-radius: 12px; border-left: 3px solid #C4773B; margin-bottom: 40px; }
+    section { margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid rgba(196,119,59,0.1); }
+    section:last-child { border-bottom: none; }
+    h2 { font-size: 17px; font-weight: 700; color: #1A0F0A; margin-bottom: 12px; }
+    p { font-size: 14px; color: #6B5344; line-height: 1.8; white-space: pre-wrap; }
+    .contact { margin-top: 40px; background: #FFFFFF; border: 1px solid rgba(196,119,59,0.2); border-radius: 14px; padding: 24px; }
+    .contact a { color: #C4773B; }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #9C8070; border-top: 1px solid rgba(196,119,59,0.1); }
+    footer a { color: #C4773B; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">← Bhumi</a>
+    <span>|</span>
+    <span class="title">Privacy Policy</span>
+  </header>
+  <main>
+    <div class="eyebrow">BHUMI</div>
+    <h1>Privacy Policy</h1>
+    <div class="updated">Effective: November 6, 2025</div>
+    <div class="intro">Your recordings, your memories, and your legacy belong to you — not us. We collect the minimum data needed to operate the service and never sell it.</div>
+
+    <section>
+      <h2>1. Who we are</h2>
+      <p>Bhumi ("Bhumi", "we", "our", or "us") is a personal legacy and digital memory application. Our registered contact for privacy matters is:
+
+Email: privacy@bhumi.app
+Grievance Officer (India — IT Act 2000): grievance@bhumi.app
+
+We handle data in accordance with the Indian Digital Personal Data Protection Act 2023 (DPDPA), and where applicable, the California Consumer Privacy Act (CCPA) and UK/EU GDPR.</p>
+    </section>
+
+    <section>
+      <h2>2. What data we collect and why</h2>
+      <p>We collect only what is necessary to operate the service:
+
+• Account data: Your name, phone number, and optional email address — used to create and authenticate your account.
+
+• Video recordings: Check-in videos and milestone message recordings you create — stored securely and delivered only to recipients you choose.
+
+• Asset notes: Financial asset information you enter voluntarily as personal records. This is equivalent to writing notes in a personal diary. Bhumi is not a financial advisor and does not verify this information.
+
+• Family connections: Names, phone numbers, and email addresses of people you invite — used solely to send them your messages at the time you specify.
+
+• Device push token: Used to send you check-in reminders and inactivity warnings. Stored only if you grant notification permission.
+
+• Usage data: Anonymised, aggregated usage patterns used to improve the app. No individual behaviour is sold or shared for advertising.</p>
+    </section>
+
+    <section>
+      <h2>3. How your data is stored</h2>
+      <p>Video recordings are stored in Cloudflare R2 object storage. Metadata and account information are stored in a PostgreSQL database hosted on Neon (a US-based provider).
+
+All data in transit is encrypted using TLS 1.2 or higher. All stored data is encrypted at rest.
+
+We do not store your OTP verification codes in plaintext — they are hashed before storage and deleted within 24 hours of expiry.</p>
+    </section>
+
+    <section>
+      <h2>4. How message delivery works</h2>
+      <p>When a message unlock condition is met (a date, life event, or inactivity period you chose), recipients receive a private email containing a unique one-time link to a secure web player.
+
+Links are:
+• Valid for 30 days
+• Unique per message — not guessable
+• Protected by delivery token (UUID)
+• Not indexed by search engines (noindex header set)
+• Not shared with anyone other than the recipient you named
+
+Bhumi does not determine whether you have died. Messages unlock based on inactivity only. You will receive a push notification when you have been inactive for 80% of your chosen window, giving you time to check in and keep messages locked.</p>
+    </section>
+
+    <section>
+      <h2>5. Sharing with third parties</h2>
+      <p>We do not sell your personal data. Ever.
+
+We share data only with:
+• Cloudflare (video storage — DPA in place)
+• Neon (database hosting — DPA in place)
+• SendGrid/Twilio SendGrid (email delivery — DPA in place)
+• RevenueCat (subscription management — processes only purchase metadata, not your content)
+• Expo (push notification delivery — token only, no message content)
+
+All third-party processors are contractually bound to protect your data and may not use it for their own purposes.</p>
+    </section>
+
+    <section>
+      <h2>6. Your rights</h2>
+      <p>You have the right to:
+
+• Access: Request a copy of all data we hold about you (Settings → Export My Data)
+• Delete: Permanently delete your account and all associated data (Settings → Account → Delete My Account). Deletion is irreversible and completed within 7 days.
+• Correct: Update your name, email, or account details at any time (Settings → Profile)
+• Withdraw consent: Remove family connections, delete individual recordings, or delete your account at any time
+
+For users in India: Under the DPDPA 2023, you may raise a complaint with our Grievance Officer at grievance@bhumi.app. We will respond within 72 hours.
+
+For California residents: You may request disclosure of categories of personal information collected, sold, or disclosed under CCPA by emailing privacy@bhumi.app.</p>
+    </section>
+
+    <section>
+      <h2>7. Children</h2>
+      <p>Bhumi is intended exclusively for users 18 years of age and older. We do not knowingly collect personal information from anyone under 18.
+
+Messages may be addressed to minors (e.g. "to my daughter on her 18th birthday") — however, the data collected belongs to the adult creator, not the future recipient. No personal data about minors is collected or stored.</p>
+    </section>
+
+    <section>
+      <h2>8. Data retention</h2>
+      <p>We retain your data for as long as your account is active, or as necessary to provide the service.
+
+Specifically:
+• Active accounts: Data retained indefinitely until deletion requested
+• Deleted accounts: All data permanently purged within 7 days
+• Delivered messages: Web player links remain accessible for 30 days after delivery, then the signed URL expires. The original recording is retained in storage until account deletion.
+• OTP codes: Automatically deleted within 24 hours of expiry
+• Delivery logs: Retained for 12 months for dispute resolution, then deleted</p>
+    </section>
+
+    <section>
+      <h2>9. Inactivity and message unlock</h2>
+      <p>Bhumi's time-lock feature unlocks messages based on app inactivity — not death confirmation. This is a technical mechanism, not a legal or medical determination.
+
+Before any messages unlock, you will receive:
+1. A push notification at 80% of your chosen inactivity window
+2. A final notification at 95% of your window
+
+By using Bhumi's time-lock feature, you acknowledge that:
+• Messages will unlock automatically if you do not check in within your chosen period
+• Bhumi does not verify death or any other condition
+• You are responsible for checking in regularly to keep messages locked</p>
+    </section>
+
+    <section>
+      <h2>10. Changes to this policy</h2>
+      <p>We will notify you of material changes to this policy via in-app notification and email (if you have provided one) at least 14 days before changes take effect. Your continued use of Bhumi after the effective date constitutes acceptance of the revised policy.</p>
+    </section>
+
+    <div class="contact">
+      <h2>11. Contact and grievance</h2>
+      <p>Privacy questions: <a href="mailto:privacy@bhumi.app">privacy@bhumi.app</a>
+Grievance Officer (India): <a href="mailto:grievance@bhumi.app">grievance@bhumi.app</a>
+General support: <a href="mailto:support@bhumi.app">support@bhumi.app</a>
+
+We aim to respond to all privacy requests within 72 hours.</p>
+    </div>
+  </main>
+  <footer>
+    <p>© 2026 Bhumi · <a href="/">Home</a> · <a href="/terms">Terms of Service</a> · <a href="mailto:support@bhumi.app">Support</a></p>
+    <p style="margin-top:6px;font-size:11px;color:#C4A090;">Made with IBM Bob</p>
+  </footer>
+</body>
+</html>

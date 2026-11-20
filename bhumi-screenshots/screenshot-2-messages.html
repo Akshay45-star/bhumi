@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1179px; height: 2556px;
+    background: linear-gradient(160deg, #0F1A14 0%, #1A2F1A 100%);
+    font-family: -apple-system, "SF Pro Display", sans-serif;
+    overflow: hidden;
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center;
+  }
+  .top-caption {
+    position: absolute; top: 100px;
+    text-align: center; padding: 0 80px;
+  }
+  .top-caption .eyebrow {
+    font-size: 36px; font-weight: 800; letter-spacing: 6px;
+    color: #2D7D57; text-transform: uppercase; margin-bottom: 24px;
+  }
+  .top-caption h1 {
+    font-size: 84px; font-weight: 900; color: #FAF7F2; line-height: 1.05;
+    margin-bottom: 24px;
+  }
+  .top-caption h1 span { color: #4ADE80; }
+  .top-caption p {
+    font-size: 38px; color: rgba(250,247,242,0.6); line-height: 1.5;
+  }
+  .phone-wrap {
+    position: absolute; bottom: 0;
+    width: 820px;
+  }
+  .phone {
+    width: 820px; height: 1700px;
+    background: #FFFFFF;
+    border-radius: 90px 90px 0 0;
+    overflow: hidden;
+    box-shadow: 0 -40px 120px rgba(45,125,87,0.3);
+    padding: 60px 48px 0;
+    display: flex; flex-direction: column; gap: 24px;
+  }
+  .notch {
+    width: 200px; height: 36px;
+    background: #0F1A14; border-radius: 0 0 24px 24px;
+    align-self: center; margin-bottom: 8px; flex-shrink: 0;
+  }
+  .header { font-size: 52px; font-weight: 900; color: #1A0F0A; }
+  .header span { color: #C4773B; }
+  .sub { font-size: 28px; color: #9C8070; margin-top: -8px; }
+  .msg-card {
+    background: #F7F4F0; border-radius: 28px; padding: 32px;
+    border-left: 5px solid #C4773B;
+  }
+  .msg-title { font-size: 32px; font-weight: 800; color: #1A0F0A; margin-bottom: 8px; }
+  .msg-recipient { font-size: 24px; color: #9C8070; margin-bottom: 16px; }
+  .msg-lock {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(196,119,59,0.1); border-radius: 14px;
+    padding: 10px 18px; font-size: 22px; color: #C4773B; font-weight: 700;
+  }
+  .msg-card-green {
+    background: #F7F4F0; border-radius: 28px; padding: 32px;
+    border-left: 5px solid #2D7D57;
+  }
+  .msg-card-purple {
+    background: #F7F4F0; border-radius: 28px; padding: 32px;
+    border-left: 5px solid #7B5EA7;
+  }
+  .msg-status {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(45,125,87,0.1); border-radius: 14px;
+    padding: 10px 18px; font-size: 22px; color: #2D7D57; font-weight: 700;
+  }
+  .msg-status-p {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(123,94,167,0.1); border-radius: 14px;
+    padding: 10px 18px; font-size: 22px; color: #7B5EA7; font-weight: 700;
+  }
+  .new-btn {
+    background: linear-gradient(90deg, #C4773B, #D4A017);
+    border-radius: 24px; padding: 32px;
+    text-align: center; font-size: 32px; font-weight: 700; color: #FAF7F2;
+    margin-top: 4px;
+  }
+  .funny-note {
+    background: rgba(196,119,59,0.08); border-radius: 20px; padding: 24px 28px;
+    border: 1px solid rgba(196,119,59,0.2);
+  }
+  .funny-note p { font-size: 24px; color: #6B5344; line-height: 1.5; font-style: italic; }
+  .funny-note span { font-weight: 700; color: #C4773B; }
+</style>
+</head>
+<body>
+  <div class="top-caption">
+    <div class="eyebrow">Milestone Messages</div>
+    <h1>Record for the<br>moments you<br><span>won't be there for.</span></h1>
+    <p>Your words. Their moment. Zero cringe.</p>
+  </div>
+  <div class="phone-wrap">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="header">Your <span>Messages</span></div>
+      <div class="sub">3 recorded · 1 delivered</div>
+
+      <div class="msg-card">
+        <div class="msg-title">💌 For Priya — Wedding Day</div>
+        <div class="msg-recipient">To: Priya Jain · Daughter</div>
+        <div class="msg-lock">🔒 Unlocks: Her Wedding Day</div>
+      </div>
+
+      <div class="msg-card-green">
+        <div class="msg-title">🎓 When you graduate</div>
+        <div class="msg-recipient">To: Rishi · Son</div>
+        <div class="msg-status">✅ Delivered · 3 days ago</div>
+      </div>
+
+      <div class="msg-card-purple">
+        <div class="msg-title">📖 If you feel lost one day</div>
+        <div class="msg-recipient">To: Priya Jain · Daughter</div>
+        <div class="msg-status-p">🔒 Unlocks: 90-day inactivity</div>
+      </div>
+
+      <div class="funny-note">
+        <p>Yes, you can record <span>"I told you so"</span> messages too.<br>We won't judge. Much.</p>
+      </div>
+
+      <div class="new-btn">+ Record New Message →</div>
+    </div>
+  </div>
+</body>
+</html>
